@@ -72,5 +72,13 @@ class Pelicula {
 
   }
 
+getPosterImg(){
 
+  if (posterPath == null) {
+    return 'https://ceslava.s3-accelerate.amazonaws.com/2016/04/mistery-man-gravatar-wordpress-avatar-persona-misteriosa-510x510.png';
+  }else{
+    return 'https://image.tmdb.org/t/p/w500/$posterPath';
+  }
+}
+  
 }
