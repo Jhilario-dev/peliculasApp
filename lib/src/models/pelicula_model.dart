@@ -20,6 +20,7 @@ class Peliculas {
 
 
 class Pelicula {
+  String uniqueId;
   int voteCount;
   int id;
   bool video;
@@ -78,6 +79,14 @@ getPosterImg(){
     return 'https://ceslava.s3-accelerate.amazonaws.com/2016/04/mistery-man-gravatar-wordpress-avatar-persona-misteriosa-510x510.png';
   }else{
     return 'https://image.tmdb.org/t/p/w500/$posterPath';
+  }
+}
+getBackgroundImg(){
+
+  if (posterPath == null) {
+    return 'https://ceslava.s3-accelerate.amazonaws.com/2016/04/mistery-man-gravatar-wordpress-avatar-persona-misteriosa-510x510.png';
+  }else{
+    return 'https://image.tmdb.org/t/p/w500/$backdropPath';
   }
 }
   
